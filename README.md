@@ -1,3 +1,7 @@
+Username:Chubbs
+
+Password:12345
+
 Confidentiality
 
 Confidentiality in this program is maintained by encrypting user messages using a Caesar cipher. When a message is encrypted, it is transformed into a format that cannot be easily read without knowing how the cipher works. This prevents unauthorized users from understanding the contents of the message. The login system also contributes to confidentiality by restricting access to only approved users based on role.
