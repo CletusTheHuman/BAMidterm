@@ -90,7 +90,7 @@ std::string decryptMessage(std::string text) {
     return text;
 }
 
-// Hash a string using your SHA256 class and return hex string
+// Hash a string using SHA256 class and return hex string
 std::string sha256String(const std::string& input) {
     SHA256 sha;
     sha.update(input);
@@ -131,7 +131,7 @@ void sha256Menu() {
     }
 }
 
-// NEW: Encrypt -> Decrypt -> Verify integrity (SHA-256 compare)
+// encryption verification 
 void encryptDecryptVerifyMenu() {
     while (true) {
         std::cout << "\nEncryption Verification\n";
@@ -160,9 +160,9 @@ void encryptDecryptVerifyMenu() {
 
             std::cout << "\n----- RESULTS -----\n";
 
-            std::cout << "Original Text: " << input << "\n";
+            std::cout << "Original Message: " << input << "\n";
 
-            std::cout << "Encrypted Text: ";
+            std::cout << "Encrypted Message: ";
             setRedText();
             std::cout << encrypted << "\n";
             resetTextColor();
@@ -183,13 +183,13 @@ void encryptDecryptVerifyMenu() {
             resetTextColor();
 
             if (originalHash == decryptedHash) {
-                std::cout << "Integrity Check: PASSED (hashes match)\n";
+                std::cout << "Integrity Check: PASSED\n";
 				setGreenText();
                 std::cout << "Message integrity verified successfully!\n";
 				resetTextColor();
             }
             else {
-                std::cout << "Integrity Check: FAILED (hash mismatch)\n";
+                std::cout << "Integrity Check: FAILED\n";
 				setRedText();
 				std::cout << "Message integrity verification failed!\n";
 				resetTextColor();
@@ -204,7 +204,7 @@ void encryptDecryptVerifyMenu() {
     }
 }
 
-// Crypto Tools Menu (Caesar + SHA-256 + Verify)
+// Crypto Tools Menu 
 void cryptoMenu() {
     while (true) {
         std::cout << "\n--- Crypto Tools Menu ---\n";
