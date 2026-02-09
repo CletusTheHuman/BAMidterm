@@ -12,8 +12,6 @@ Availability in this program is maintained through the menu system. Users are ab
 
 Entropy & Key generation
 
-In this program, the Caesar cipher uses a shift value as the key to encrypt and decrypt messages. This shift tells the program how many letters to move forward or backward in the alphabet. Even though this key is simple and not randomly generated, it still shows how encryption depends on a key to work.
-
-This project does not use advanced key generation like real encryption systems. In stronger systems like AES, keys are created using random number generators so they have high entropy and are difficult to predict. In this program, the fixed shift value is used just to demonstrate the basic idea of how keys control encryption and decryption.
+In this program, the Caesar cipher uses a shift value as the key to encrypt and decrypt messages. This shift tells the program how many letters to move forward or backward in the alphabet. Even though this key is simple and not randomly generated, it still shows how encryption depends on a key to work. This project does not use advanced key generation like real encryption systems. In stronger systems like AES, keys are created using random number generators so they have high entropy and are difficult to predict. In this program, the fixed shift value is used just to demonstrate the basic idea of how keys control encryption and decryption.
 
 
