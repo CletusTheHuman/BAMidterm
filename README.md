@@ -8,7 +8,7 @@ Integrity in this program is supported through the use of SHA-256 hashing. When 
 
 Availability
 
-Availability in this program is maintained through the menu system. Users are able to log in, access encryption tools, and use hashing functions.
+Availability is supported in this program through the menu system. Users are able to log in, access encryption tools, and use hashing functions.
 
 Entropy & Key generation
 
